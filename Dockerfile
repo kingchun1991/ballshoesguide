@@ -18,6 +18,7 @@ ENV NODE_ENV development
 
 # Install Utilities
 RUN apt-get update -q  \
+&& apt-get install -y --no-install-recommends apt-utils \
  && apt-get install -yqq \
  curl \
  git \
