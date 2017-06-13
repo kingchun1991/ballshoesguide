@@ -52,6 +52,8 @@ WORKDIR /opt/mean.js
 COPY package.json /opt/mean.js/package.json
 RUN npm install --quiet && npm cache clean
 
+COPY eslint.json /opt/mean.js/eslint.json
+
 # Install bower packages
 COPY bower.json /opt/mean.js/bower.json
 COPY .bowerrc /opt/mean.js/.bowerrc
