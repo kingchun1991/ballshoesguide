@@ -1,2 +1,5 @@
-runtime: custom
+# for docker deploy
+# runtime: custom
+# for nodejs deploy
+runtime: nodejs
 env: flex
