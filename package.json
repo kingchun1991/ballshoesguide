@@ -17,7 +17,7 @@
   "scripts": {
     "update": "npm update && npm prune && bower install --allow-root && bower prune --allow-root",
     "clean": "rm -rf node_modules/ public/lib/",
-    "reinstall": "npm cache clean && npm run clean && npm install && npm install gulp",
+    "reinstall": "npm cache clean && npm run clean && npm install",
     "start": "gulp",
     "start:prod": "gulp prod",
     "start:debug": "node-debug --web-host 0.0.0.0 server.js & gulp debug",
@@ -71,9 +71,7 @@
     "socket.io": "^2.0.2",
     "validator": "~7.0.0",
     "winston": "^2.3.1",
-    "wiredep": "~4.0.0"
-  },
-  "devDependencies": {
+    "wiredep": "~4.0.0",
     "coveralls": "~2.13.0",
     "del": "^2.2.2",
     "eslint": "~2.2.0",
